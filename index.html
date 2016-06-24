@@ -12,7 +12,7 @@
 
 <body>
 
-<!-- Header -->
+    <!-- Header -->
 
     <header>
         <figure><img alt="batpinguy" src="pictures/batpinguy.jpeg" /> </figure>
@@ -21,16 +21,41 @@
 
     <div id="bordure"></div>
 
-    <nav id="menu"></nav>
+    <!-- Menu déroulant -->
 
-<!-- 1ère section -->
+    <ul id="menu">
+
+        <li><a href="#title">Home</a></li>
+        <li><a href="#part_1">Commandes de base >></a></li>
+        <ul class="hidden">
+            <li><a href="#ls">ls</a></li>
+            <li><a href="#cd">cd</a></li>
+            <li><a href="#mv">mv</a></li>
+            <li><a href="#cp">cp</a></li>
+            <li><a href="#mkdir">mkdir</a></li>
+            <li><a href="#cat">cat</a></li>
+            <li><a href="#find">find</a></li>
+            <li><a href="#grep"></a></li>
+        </ul>
+
+        <li><a href="#part_2">Commandes sytème >></a></li>
+        <ul class="hidden">
+            <li><a href="#top">top</a></li>
+            <li><a href="#chmod">chmod</a></li>
+            <li><a href="#du">du</a></li>
+            <li><a href="#reboot"></a></li>
+        </ul>
+
+    </ul>
+
+    <!-- 1ère section -->
 
     <section id="main">
 
-        <h2>Commandes de base</h2>
+        <h2 id="part_1">Commandes de base</h2>
 
         <article>
-            <h4 id="#ls"> ls (list segment)</h4>
+            <h4 id="ls"> ls (list segment)</h4>
             <p class="subtitle">Permet de lister un répertoire.</p>
             <p>
                 <span>-a:</span> liste les fichiers cachés.
@@ -39,7 +64,7 @@
         </article>
 
         <article>
-            <h4 id="#cd"> cd (change directory)</h4>
+            <h4 id="cd"> cd (change directory)</h4>
             <p class="subtitle">Permet de se promener dans le répertoire</p>
             <p>
                 <span>cd -:</span> Remonte au répertoire précedent
@@ -49,7 +74,7 @@
         </article>
 
         <article>
-            <h4 id="#mv"> mv (move)</h4>
+            <h4 id="mv"> mv (move)</h4>
             <p class="subtitle">Permet de déplacer/renommer des fichers et répertoires.</p>
             <p>
                 <span>-f:</span> Ecrase les fichiers de destination sans confirmation
@@ -58,7 +83,7 @@
         </article>
 
         <article>
-            <h4 id="#cp"> cp (copie) & rm (remove)</h4>
+            <h4 id="cp"> cp (copie) & rm (remove)</h4>
             <h6>cp</h6>
             <p class="subtitle"> Permet de copier des fichier et répertoires.</p>
             <p>
@@ -74,7 +99,7 @@
         </article>
 
         <article>
-            <h4 id="#mkdir"> mkdir (make directory) & rmdir (remove directory)</h4>
+            <h4 id="mkdir"> mkdir (make directory) & rmdir (remove directory)</h4>
             <h6>mkdir</h6>
             <p class="subtitle">Permet de créer un répertoire vide</p>
             <p>
@@ -86,7 +111,7 @@
         </article>
 
         <article>
-            <h4 id="#cat">cat (concatenate) & more</h4>
+            <h4 id="cat">cat (concatenate) & more</h4>
             <h6>cat</h6>
             <p class="subtitle">Affiche le contenu d'un fichier.</p>
             <p>
@@ -99,7 +124,7 @@
         </article>
 
         <article>
-            <h4 id="#find">find</h4>
+            <h4 id="find">find</h4>
             <p class="subtitle">Permet de chercher des fichiers et éventuellement d'effectuer des actions sur ceux-ci.</p>
             <p>
                 <span>-name:</span> Permet de faire une recherche par nom.
@@ -117,7 +142,7 @@
         </article>
 
         <article>
-            <h4 id="#grep">grep (global regular expression print)</h4>
+            <h4 id="grep">grep (global regular expression print)</h4>
             <p class="subtitle">Recherche une chaine de caractère dans les fichiers</p>
             <p>
                 <span>-c:</span> Retourne le nombre de ligne au lieu des lignes elle-mêmes.
@@ -129,19 +154,19 @@
 
     </section>
 
-<!-- 2ème section -->
+    <!-- 2ème section -->
 
     <section>
 
-        <h2>Commandes système</h2>
+        <h2 id="part_2">Commandes système</h2>
 
         <article>
-            <h4 id="#top">top</h4>
+            <h4 id="top">top</h4>
             <p class="subtitle">Affiche la charge CPU et mémoire vive</p>
         </article>
 
         <article>
-            <h4 id="#chmod">chmod (change mod)</h4>
+            <h4 id="chmod">chmod (change mod)</h4>
             <p class="subtitle">Modifie les permissions d'accés</p>
             <p>
                 <span>+ , - , =:</span> Ajoute, enlève, autorise une permission
@@ -150,15 +175,15 @@
         </article>
 
         <article>
-            <h4 id="#du">du (disk usage)</h4>
+            <h4 id="du">du (disk usage)</h4>
             <p class="subtitle">Affiche l'espace disque utilisé par les fichiers</p>
             <p>
                 <span>-h:</span> "human readable": affiche les donnés en Ko/Mo:/Go.</p>
         </article>
 
         <article>
-          <h4 id="#reboot">reboot</h4>
-          <p class ="subtitle"> Redémarre l'ordinateur (nécessite sudo)</p>
+            <h4 id="reboot">reboot</h4>
+            <p class="subtitle"> Redémarre l'ordinateur (nécessite sudo)</p>
         </article>
 
     </section>

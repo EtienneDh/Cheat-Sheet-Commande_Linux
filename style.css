@@ -34,14 +34,20 @@ figure {
   border: 2px solid black;
 }
 
-/*Section Settings */
 
-h2 {
-  font-size: 150%;
+/*Menu*/
+
+ul {
+  /*list-style:none;*/
 }
+
+
+/*Section Settings */
 
 #main {
   border: 1px solid black;
+  /*display: inline-block;:*/
+  /*vertical-align: top;*/
   margin-top: 4%;
   margin-left: 28%;
   width: auto;
@@ -53,6 +59,10 @@ article {
 
 article h4{
   font-size: 115%;
+}
+
+h2 {
+  font-size: 150%;
 }
 
 .subtitle {
