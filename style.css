@@ -46,22 +46,14 @@ ul {
   width: 150px;
   display:inline-block;
   border: 1px solid black;
-
-}
-
-ul li {
-  display: block;
-  border: 1px solid black;
-  width:auto;
-}
-
-ul li a {
-  background: red;
-
 }
 
 #menu li ul li {
   display: none;
+}
+
+#menu li a:hover + .hidden li {
+  display:block;
 }
 
 #menu li {
@@ -72,9 +64,6 @@ ul li a {
   font-weight: bold;
 }
 
-#menu li a:hover + .hidden li {
-  display:block;
-}
 
 /*Section Settings */
 
