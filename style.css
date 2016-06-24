@@ -5,6 +5,14 @@
   font-size: 1em;
 }
 
+span {
+  font-weight:bold;  
+}
+
+p{
+  line-height: 150%;
+}
+
 /*Header*/
 
 figure {
