@@ -12,6 +12,8 @@
 
 <body>
 
+<!-- Header -->
+
     <header>
         <figure><img alt="batpinguy" src="pictures/batpinguy.jpeg" /> </figure>
         <h1 id="title">Cheat Sheet: Commandes Linux</h1>
@@ -21,7 +23,11 @@
 
     <nav id="menu"></nav>
 
+<!-- 1ère section -->
+
     <section id="main">
+
+        <h2>Commandes de base</h2>
 
         <article>
             <h4 id="#ls"> ls (list segment)</h4>
@@ -96,9 +102,12 @@
             <h4 id="#find">find</h4>
             <p class="subtitle">Permet de chercher des fichiers et éventuellement d'effectuer des actions sur ceux-ci.</p>
             <p>
-                <span>-name:</span> Permet de faire une recherche par nom.<br>
-                <span>-type:</span> Permet de faire une recherche par type.<br>
-                <span>-atime:</span> Recherche par dernière date d'accés.<br>
+                <span>-name:</span> Permet de faire une recherche par nom.
+                <br>
+                <span>-type:</span> Permet de faire une recherche par type.
+                <br>
+                <span>-atime:</span> Recherche par dernière date d'accés.
+                <br>
                 <span>-user:</span> Recherche par utilisateur.</p>
 
             <h6>Actions fréquentes</h6>
@@ -108,16 +117,49 @@
         </article>
 
         <article>
-        <h4 id="#grep">grep (global regular expression print)</h4>
-        <p class ="subtitle">Recherche une chaine de caractère dans les fichiers</p>
-        <p>
-          <span>-c:</span> Retourne le nombre de ligne au lieu des lignes elle-mêmes. <br>
-          <span>-i:</span> Insensible à la casse. <br>
-          <span>-r:</span> Recherche recursive.</p>
+            <h4 id="#grep">grep (global regular expression print)</h4>
+            <p class="subtitle">Recherche une chaine de caractère dans les fichiers</p>
+            <p>
+                <span>-c:</span> Retourne le nombre de ligne au lieu des lignes elle-mêmes.
+                <br>
+                <span>-i:</span> Insensible à la casse.
+                <br>
+                <span>-r:</span> Recherche recursive.</p>
         </article>
 
+    </section>
 
+<!-- 2ème section -->
 
+    <section>
+
+        <h2>Commandes système</h2>
+
+        <article>
+            <h4 id="#top">top</h4>
+            <p class="subtitle">Affiche la charge CPU et mémoire vive</p>
+        </article>
+
+        <article>
+            <h4 id="#chmod">chmod (change mod)</h4>
+            <p class="subtitle">Modifie les permissions d'accés</p>
+            <p>
+                <span>+ , - , =:</span> Ajoute, enlève, autorise une permission
+                <br>
+                <span>r, w, x:</span> Lire, écrire, executer</p>
+        </article>
+
+        <article>
+            <h4 id="#du">du (disk usage)</h4>
+            <p class="subtitle">Affiche l'espace disque utilisé par les fichiers</p>
+            <p>
+                <span>-h:</span> "human readable": affiche les donnés en Ko/Mo:/Go.</p>
+        </article>
+
+        <article>
+          <h4 id="#reboot">reboot</h4>
+          <p class ="subtitle"> Redémarre l'ordinateur (nécessite sudo)</p>
+        </article>
 
     </section>
 
