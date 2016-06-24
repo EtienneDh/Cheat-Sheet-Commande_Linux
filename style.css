@@ -1,0 +1,27 @@
+/*General Settings*/
+
+* {
+  font-family: Verdana, sans-serif;
+  font-size: 1em;
+}
+
+/*Header*/
+
+figure {
+  display: inline-block;
+  border: 1px solid black;
+  vertical-align: middle;
+}
+
+#title {
+  display: inline-block;
+  border: 1px solid black;
+  vertical-align: middle;
+  font-size: 3em;
+  font-style: italic;
+}
+
+#bordure {
+  display: block;
+  border: 2px solid black;
+}
