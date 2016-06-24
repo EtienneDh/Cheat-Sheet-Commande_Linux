@@ -10,7 +10,7 @@ span {
 }
 
 p{
-  line-height: 150%;
+  line-height: 140%;
 }
 
 /*Header*/
@@ -45,6 +45,10 @@ figure {
 
 article {
   border-bottom: 1px solid black;
+}
+
+article h4{
+  font-size: 110%;
 }
 
 .subtitle {
