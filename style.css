@@ -37,21 +37,53 @@ figure {
 
 /*Menu*/
 
-ul {
-  /*list-style:none;*/
+#menu {
+  float: left;
 }
 
+ul {
+  list-style:none;
+  width: 150px;
+  display:inline-block;
+  border: 1px solid black;
+
+}
+
+ul li {
+  display: block;
+  border: 1px solid black;
+  width:auto;
+}
+
+ul li a {
+  background: red;
+
+}
+
+#menu li ul li {
+  display: none;
+}
+
+#menu li {
+  border: 1px solid black;
+}
+
+#menu li a:hover {
+  font-weight: bold;
+}
+
+#menu li a:hover + .hidden li {
+  display:block;
+}
 
 /*Section Settings */
 
-#main {
+.main {
   border: 1px solid black;
-  /*display: inline-block;:*/
-  /*vertical-align: top;*/
-  margin-top: 4%;
-  margin-left: 28%;
-  width: auto;
+  float:right;
+  margin-top: 15px;
 }
+
 
 article {
   border-bottom: 1px solid black;
