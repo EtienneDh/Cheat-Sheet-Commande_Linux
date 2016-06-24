@@ -25,3 +25,12 @@ figure {
   display: block;
   border: 2px solid black;
 }
+
+/*Section Settings */
+
+#main {
+  border: 1px solid black;
+  margin-top: 4%;
+  margin-left: 28%;
+  width: auto;
+}
