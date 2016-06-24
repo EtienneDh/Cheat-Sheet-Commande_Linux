@@ -48,6 +48,10 @@ ul {
   border: 1px solid black;
 }
 
+ul > li a {
+  z-index: 2;
+}
+
 #menu li ul li {
   display: none;
 }
@@ -57,7 +61,7 @@ ul {
 }
 
 #menu li {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 
 #menu li a:hover {
