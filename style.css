@@ -49,25 +49,36 @@ ul {
 }
 
 ul > li a {
-  z-index: 2;
-}
-
-#menu li ul li {
-  display: none;
-}
-
-#menu li a:hover + .hidden li {
-  display:block;
+  padding-bottom: 70px;
 }
 
 #menu li {
   /*border: 1px solid black;*/
+  margin-bottom: 0px;
 }
 
 #menu li a:hover {
   font-weight: bold;
 }
 
+.hidden li a  {
+  margin-top: 0px;
+  padding-top: 0px;
+  width: 50px;
+
+}
+
+/*Hide elements*/
+
+#menu li ul li {
+  display: none;
+}
+
+/*Reveal elements on hover*/
+
+#menu li a:hover + .hidden li, .hidden:hover li  {
+  display:block !important;
+}
 
 /*Section Settings */
 
