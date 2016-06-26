@@ -25,12 +25,12 @@ figure {
   vertical-align: middle;
   font-size: 3em;
   font-style: italic;
-  color: 006B94;
+  color: #0074a0;
 }
 
 #bordure {
   display: block;
-  border: 2px solid black;
+  border: 2px solid #005474;
 }
 
 
@@ -39,7 +39,9 @@ figure {
 #menu {
   float: left;
   line-height: 120%;
-  border: 1px solid black;
+  border: 2px solid #005474;
+  border-radius: 20px;
+  position: fixed;
 }
 
 ul {
@@ -48,19 +50,19 @@ ul {
   display:inline-block;
 }
 
-#menu li {
-  /*border: 1px solid black;*/
-  margin-bottom: 0px;
-}
+
 
 /*Button Design*/
 
-#menu li a {
+#menu li > a {
   text-align: center;
   line-height: 120%;
-  width: 80px;
+  color: #0074a0;
+  /*width: 80px;*/
+}
 
-
+#menu li ul li a {
+  color: #0091c9;
 }
 
 /*Hover, link, visited Design*/
@@ -69,7 +71,13 @@ ul {
   font-weight: bold;
 }
 
+#menu li > a:visited {
+  color: #0074a0;
+}
 
+#menu li ul li a:visited {
+  color: #0091c9;
+}
 
 /*Hide elements*/
 
@@ -96,17 +104,27 @@ article {
   border-bottom: 1px solid black;
 }
 
-article h4{
+article h4 {
   font-size: 115%;
-  color: 005474;
+  color: #0091c9;
 }
 
 h2 {
   font-size: 150%;
-  color:005474;
+  color:#0074a0;
 }
 
 .subtitle {
   font-style: italic;
   padding-bottom: 0,110em;
+}
+
+/*Responsive Design*/
+
+@media handheld, screen and (max-width:1250px) {
+
+  #menu {
+    display:none;
+  }
+
 }
