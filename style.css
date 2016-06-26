@@ -17,16 +17,15 @@ p{
 
 figure {
   display: inline-block;
-  border: 1px solid black;
   vertical-align: middle;
 }
 
 #title {
   display: inline-block;
-  border: 1px solid black;
   vertical-align: middle;
   font-size: 3em;
   font-style: italic;
+  color: 006B94;
 }
 
 #bordure {
@@ -39,17 +38,14 @@ figure {
 
 #menu {
   float: left;
+  line-height: 120%;
+  border: 1px solid black;
 }
 
 ul {
   list-style:none;
-  width: 150px;
+  width: 200px;
   display:inline-block;
-  border: 1px solid black;
-}
-
-ul > li a {
-  padding-bottom: 70px;
 }
 
 #menu li {
@@ -57,16 +53,23 @@ ul > li a {
   margin-bottom: 0px;
 }
 
+/*Button Design*/
+
+#menu li a {
+  text-align: center;
+  line-height: 120%;
+  width: 80px;
+
+
+}
+
+/*Hover, link, visited Design*/
+
 #menu li a:hover {
   font-weight: bold;
 }
 
-.hidden li a  {
-  margin-top: 0px;
-  padding-top: 0px;
-  width: 50px;
 
-}
 
 /*Hide elements*/
 
@@ -83,9 +86,9 @@ ul > li a {
 /*Section Settings */
 
 .main {
-  border: 1px solid black;
   float:right;
   margin-top: 15px;
+  margin-right: 80px;
 }
 
 
@@ -95,10 +98,12 @@ article {
 
 article h4{
   font-size: 115%;
+  color: 005474;
 }
 
 h2 {
   font-size: 150%;
+  color:005474;
 }
 
 .subtitle {
